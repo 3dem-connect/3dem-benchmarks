@@ -1,2 +1,2 @@
 # 3dem-benchmarks
-Cummonity benchmark examples for 3D EM problems in geophyiscs
+Cummunity benchmark examples designed for 3D-EM Connect workshop
