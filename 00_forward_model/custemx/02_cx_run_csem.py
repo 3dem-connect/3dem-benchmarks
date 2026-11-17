@@ -29,5 +29,5 @@ for p in [1, 2]:
               'sig': sig_vals,
               'solver': solver}
 
-        mod = Mod(mesh='meshes/benchmark_mesh.xdmf', mp=mp)
+        mod = Mod(mesh='meshes/benchmark_mesh_csem.xdmf', mp=mp)
         mod.solve()   # pvd=True to export results on global mesh for Paraview
