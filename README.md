@@ -21,17 +21,17 @@ Cummunity benchmark examples designed for 3D-EM Connect workshop
 
 - **anomaly geometry**
     - eastern anomaly: thin plate, tilted
-        - incl:
+        - incl:\
             45°
-        - decl:
+        - decl:\
             45°
-        - thickness:
+        - thickness:\
             50m
-        - size:
+        - size:\
             300m (length) * 500m (width)
-        - center position:
+        - center position:\
             (500, 0, -150)
-        - resistivity:
+        - resistivity:\
             10 Ohmm
 
     - western anomaly: cylinder
