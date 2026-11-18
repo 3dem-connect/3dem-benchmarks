@@ -14,17 +14,17 @@ willing to contribute are welcome to add their simulation results for others wit
 
 ## Model descriptions
 
-	**1) Forward model**
+### 1) Forward model
 
-		Synthetic 2-layer model with 2 anomalies, flat surface.
+	Synthetic 2-layer model with 2 anomalies, flat surface.
 
-		[Forward model description](./00_forward_model//README.md)
+[Forward model description](./00_forward_model//README.md)
 
-	**2) Secret model**
+### 2) Secret model**
 
-		Synthetic CSEM, AMT (and TEM, work in progress) data are provided to recover
-		a synthetic model based on a real-world case study - the final resistivity model of this study
-		was smoothed and contrasts enhanced to create a slightly modified subsurface model which allows
-		to create high-quality synthetic data sets.
+	Synthetic CSEM, AMT (and TEM, work in progress) data are provided to recover
+	a synthetic model based on a real-world case study - the final resistivity model of this study
+	was smoothed and contrasts enhanced to create a slightly modified subsurface model which allows
+	to create high-quality synthetic data sets.
 
-		[Secret model description](./00_secret_model//README.md)
+[Secret model description](./00_secret_model//README.md)
