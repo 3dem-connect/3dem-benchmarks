@@ -75,12 +75,23 @@ transmitters (dipole: green, loop: orange), and receivers (blue dots).*
     - times:
         [0.0001 - 1] (s), 41 log-steps with 10 per decade between 0.1ms and 1s
 
-## Forward Model
-- under custemx
-    - Mesh generation: 01_cx_create_benchmark_mesh.py
-        - outputs: vtk in meshes/tmp
-        - *.1.vtk as 3D mesh
-        - *_omega.vtk for anomaly and boundaries only
-    - running scripts for csem, amt and tem are provided.
+
+## custemx model setup
+
+### Mesh generation
+    - **mesh generation script numbers**: *custemx/01...py*
     - central model with layered-earth geometry: 10 * 10 * 10 km
     - outer (halfspace) dimensions: 100 * 100 * 100 km
+    - output mesh: vtk files in *meshes/tmp*, can be
+      visualized with Paraview by opening the mesh *NAME.1.vtk*
+    - Rx and Tx can be visualized with Paraview after mesh generation by
+      importing *NAME_rx.vtk* and *NAME_tx.vtk* files
+    - input for FE modeling: converted xdm5/h5 with meshtags in *meshes*
+
+### FE simulation
+    - ""simulation scripts numbers**: *custemx/11...py*
+
+
+### Visualization
+    - "plot scrip numbers": *custemx/21...py*
+

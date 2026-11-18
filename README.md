@@ -9,8 +9,8 @@ The repository contains two folders for now:
 
 Both models are design to work either with a CSEM, AMT, or TEM setup
 
-The repository may be extended with furhter benchmark examples in the future and community members
-willing to contribute are welcome to add their simulation results for others with a short description
+The repository may be extended with further benchmark examples in the future and community members
+willing to contribute are welcome to add their simulation results with a short description
 
 ## Model descriptions
 
@@ -20,7 +20,7 @@ willing to contribute are welcome to add their simulation results for others wit
 
 [Forward model description](./00_forward_model//README.md)
 
-### 2) Secret model**
+### 2) Secret model
 
 	Synthetic CSEM, AMT (and TEM, work in progress) data are provided to recover
 	a synthetic model based on a real-world case study - the final resistivity model of this study
