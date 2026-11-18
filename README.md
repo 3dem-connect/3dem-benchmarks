@@ -3,7 +3,14 @@ Cummunity benchmark examples designed for 3D-EM Connect workshop
 
 ## Model description
 
-![Model geometry](./00_forward_model/setup/model_view_anomalies_transmitters.png)
+![Model geometry](./00_forward_model/setup/model_view_center.png)
+*3D view of central model area, anomalies (plate: blue, cylinder: red) and
+transmitters (dipole: green, loop: orange).*
+
+![Model geometry](./00_forward_model/setup/model_view_large.png)
+*3D view of complete model, layers and anomalies (greyish colors),
+transmitters (dipole: green, loop: orange), and receivers (blue dots).*
+
 
 - **2 layer model**:
     - 1st layer thickness:
