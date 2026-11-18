@@ -1,20 +1,19 @@
 # Forward Model description
 
-### Synthetic 2-layer model with 2 anomalies, flat surface.
-[Forward model description](./00_forward_model//README.md)
+This forward model was designed to simulat a land-based, ground-based
+transmitter (except AMT) and receiver setup to simulate either frequency-domain
+or time-domain electromagentic field data, or impedances and tipper data
+without a controlled-source
 
-### Secret model: Synthetic CSEM, AMT (and TEM, work in progress) data are provided to recover
-a synthetic model based on a real-world case study - the final resistivity model of this study
-was smoothed and contrasts enhanced to create a slightly modified subsurface model which allows
-to create high-quality synthetic data sets.
+This model may serve as basis to be later on up- or downscaled to mimic
+shallower or deeper exploration scales, or include topography topography,
+airborne receivers, or other features...
 
-[Secret model description](./00_secret_model//README.md)
-
-![Model geometry center](./00_forward_model/setup/model_view_center.png)
+![Model geometry center](./setup/model_view_center.png)
 *3D view of central model area, anomalies (plate: blue, cylinder: red) and
 transmitters (dipole: green, loop: orange).*
 
-![Model geometry large](./00_forward_model/setup/model_view_large.png)
+![Model geometry large](./setup/model_view_large.png)
 *3D view of complete model, layers and anomalies (greyish colors),
 transmitters (dipole: green, loop: orange), and receivers (blue dots).*
 
