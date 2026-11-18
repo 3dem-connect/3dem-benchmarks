@@ -63,7 +63,7 @@ M.add_rx(rx2)
 # plate / brick resisitivity: 10, 50
 M.add_plate(300., 500., 50., [-500., 0., -150.], 45., 45., cell_size=1e3)
 M.add_cylinder(100., 500., origin=[400., 100., -150.], n_segs=32,
-                     dip=90., dip_azimuth=0., cell_size=1e4)
+               dip=90., dip_azimuth=0., cell_size=1e4)
 
 # extend the computational domain (reduce boundary artifacts for low freqs.)
 M.extend_world(x_fact=10., y_fact=10., z_fact=10.)
