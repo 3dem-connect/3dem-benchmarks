@@ -89,9 +89,9 @@ transmitters (dipole: green, loop: orange), and receivers (blue dots).*
     - input for FE modeling: converted xdm5/h5 with meshtags in *meshes*
 
 ### FE simulation
-    - ""simulation scripts numbers**: *custemx/11...py*
+    - ""simulation script numbers**: *custemx/11...py*
 
 
 ### Visualization
-    - "plot scrip numbers": *custemx/21...py*
+    - "plot script numbers": *custemx/21...py*
 

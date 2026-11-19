@@ -4,8 +4,8 @@ Cummunity benchmark examples designed for the 3D-EM Connect workshop
 In this repository, we provide the data required for simulating benchmark solutions with other software.
 The repository contains two folders for now:
 
-	1) A model to calculate forward responses in form of EM-fields or MT-data
-	2) A secret model that needs to re recovered by 3D inversing from the provided data sets
+	1) A land-based model to calculate forward responses in form of EM-fields or MT-data
+	2) A secret model that needs to be recovered by 3D inversing from the provided data sets
 
 Both models are design to work either with a CSEM, AMT, or TEM setup
 
@@ -27,4 +27,4 @@ willing to contribute are welcome to add their simulation results with a short d
 	was smoothed and contrasts enhanced to create a slightly modified subsurface model which allows
 	to create high-quality synthetic data sets.
 
-[Secret model description](./00_secret_model//README.md)
+[Secret model description](./01_secret_model//README.md)
