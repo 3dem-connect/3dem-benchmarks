@@ -25,8 +25,8 @@ freqs = [1e0, 1e1, 1e2, 1e3, 1e4]
 
 for p in [1, 2]:
     for solver in ['direct']:
-        mp = {'name': f'amt_benchmark_p{p}_{solver}',
-              'mode': 'MT1',
+        mp = {'name': f'MT_p{p}_{solver}',
+              'mode': 'MT1D',
               'p': p,
               'frequency': freqs,
               'sig': sig_vals,

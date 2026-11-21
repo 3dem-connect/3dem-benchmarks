@@ -20,15 +20,18 @@ sig_vals = {0: 1e-8,
             3: 1/10.,
             4: 1/5000.}
 
-# specify frequencies
-freqs = [1e0, 1e1, 1e2, 1e3, 1e4]
+# times 10 log steps per decade
 
 for solver in ['direct']:
-    mp = {'name': f'benchmark_p{p}_{solver}',
+    mp = {'name': f'RA_p{p}_{solver}',
           'p': p,
-          'frequency': freqs,
           'sig': sig_vals,
-          'solver': solver}
+          'approach': 'Et',
+          'mode': 'ETD',
+          'integrator': 'RA', # IE, RA
+          't_min': -4,
+          't_max': -0,
+          'n_steps': 41}
 
-    mod = Mod(mesh='meshes/benchmark_mesh.xdmf', mp=mp)
+    mod = Mod(mesh='meshes/benchmark_mesh_csem.xdmf', mp=mp)
     mod.solve(pvd=True)

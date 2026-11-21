@@ -32,9 +32,9 @@ upload new simulation results individually**
 
 ### 2) Secret model
 
-	Synthetic CSEM, AMT (and TEM, work in progress) data are provided to recover
-	a synthetic model based on a real-world case study - the final resistivity model of this study
-	was smoothed and contrasts enhanced to create a slightly modified subsurface model which allows
-	to create high-quality synthetic data sets.
+	Synthetic CSEM, AMT (and TEM, work in progress) data are provided to
+	recover a synthetic model based on a real-world case study - the final
+	resistivity model of this study was smoothed at the surface and contrasts
+	at greater depths slightly enhanced to create the synthetic data sets.
 
 [Secret model description](./01_secret_model//README.md)
