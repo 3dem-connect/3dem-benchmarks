@@ -3,7 +3,8 @@
 ## Cummunity benchmark examples designed for the 3D-EM Connect workshop
 
 - This repository provides the data required for simulating benchmark
-solutions with differnt software. The repository contains two examples for now
+  solutions with different software. The repository contains two examples for
+  now
 
 - **Forward benchmark:** A land-based model to calculate forward responses in
   form of EM-fields or MT-data
