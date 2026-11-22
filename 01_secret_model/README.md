@@ -45,7 +45,13 @@ area and the provided topography data fit to the synthetic origin.
 
 **1) AMT data**
 
-- Impedance and tipper data are provided as edi-files: *data/edi_v0.zip*
+- Impedance and tipper data are provided as edi-files: *data/noisy.zip*
+
+- Error model: corresponds to the provided variances in the edi files
+
+- Other common error models may be applied as well
+
+- If of interest, the noisefree data are uploaded as well: *data/noisefree.zip*
 
 - The data follow common MT convention as provided, e.g., in the [MT3DINV4 edi
   workshop files](https://mt3dinv4.mtnet.info/Secret_model.html)
@@ -60,11 +66,11 @@ area and the provided topography data fit to the synthetic origin.
 
 - range of receiver stations: -2000 - 2000 m in x and y directions
 
-- Error model: corresponds to the provided variances in the edi files
+- coordinates of topo files follow common UTM easting & northing convention
 
 **2) CSEM data**
 
-- added very soon
+- added soon
 
 **3) TEM data**
 

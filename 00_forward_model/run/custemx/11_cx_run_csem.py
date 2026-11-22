@@ -21,18 +21,6 @@ sig_vals = {0: 1e-8,
 # specify frequencies
 freqs = [1e0, 1e1, 1e2, 1e3, 1e4]
 
-freqs = [1e2]
-for p in [2]:
-    for solver in ['iterative']: 
-        mp = {'name': f'Et_p{p}_{solver}',
-              'p': p,
-              'frequency': freqs,
-              'sig': sig_vals,
-              'solver': solver}
-
-        mod = Mod(mesh='meshes/benchmark_mesh_csem.xdmf', mp=mp)
-        mod.solve(pvd=True)   # p
-
 # for p in [1, 2]:
 #     for solver in ['direct', 'iterative']:
 #         mp = {'name': f'Et_p{p}_{solver}',
@@ -52,7 +40,7 @@ sig_0 = {0: 1e-8,
          3: 1/500.,
          4: 1/500.}
 
-for p in [2]:
+for p in [1, 2]:
     for solver in ['direct', 'iterative']:
         mp = {'name': f'Es_p{p}_{solver}',
               'p': p,

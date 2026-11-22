@@ -22,14 +22,14 @@ tx1 = mu.line_y(start=-500., stop=500., n_segs=100)
 tx2 = mu.loop_r(start=[-500., -500.], stop=[500., 500.], n_segs=400)
 
 # save survey geometry to use with other simulation software
-np.savetxt('../setup/rx_line.dat', rx1,
+np.savetxt('../../setup/rx_line.dat', rx1,
            header='Rx Pos: x, y, z (m)', fmt='%.3f')
-np.savetxt('../setup/rx_grid.dat', rx2,
+np.savetxt('../../setup/rx_grid.dat', rx2,
            header='Rx Pos: x, y, z (m)', fmt='%.3f')
 
-np.savetxt('../setup/tx_grounded.dat', tx1,
+np.savetxt('../../setup/tx_grounded.dat', tx1,
            header='Rx Pos: x, y, z (m)', fmt='%.3f')
-np.savetxt('../setup/tx_loop.dat', tx2,
+np.savetxt('../../setup/tx_loop.dat', tx2,
            header='Rx Pos: x, y, z (m)', fmt='%.3f')
 
 # move Rx a bit into the subsurface, 10 cm

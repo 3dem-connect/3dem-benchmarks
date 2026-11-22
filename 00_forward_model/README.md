@@ -58,7 +58,7 @@ and receivers at the surface (blue dots); resistivity values are indicated.*
         - plate dimensions:<br>
             300m (length, x-dim before rot.) * 500m (width, y-dim before rot.)
         - plate original (central rotation point):<br>
-            (500, 0, -150)
+            (-500, 0, -150)
         - declination:<br>
             45°
         - inclination:<br>
@@ -106,9 +106,36 @@ and receivers at the surface (blue dots); resistivity values are indicated.*
     - *DIR_NAME/INDIVIDUAL_TAG_*Rx02_Tx02.dat
 
 - **File format**
-    - to be added soon, see provided example files of custemx simulations
+    - Preferably, use suggested file format for uploading responses:
+    **[AMT](./amt_results/custemx/21_11_2026_MT_p1_direct_Rx01.dat)**,
+    **[CSEM](./csem_results/custemx/21_11_2026_Et_p2_direct_Rx01_Tx01.dat)**,
+    **[TEM](./tem_results/custemx/21_11_2026_RA_p1_direct_Rx01_Tx01.dat)**,
+    - Writer and reader helper functions in Python, which may be easily adapted
+    (with AI support) to work with other codes and programming languages are
+    available **[HERE](./utils)**
+    - Alternatively, consider established data formats (e.g., EDI or EMData)
+    that are self-descriptive, well-documented, and readily parseable.
 
 ## Model setup in custemx
 
 - **[See here](./run/custemx/custemx_README.md)**
 
+## Results computed with custemx
+
+- **Note: Selected responses for visualization purposes, no final results**
+- Type and style of plots, calculating different statistics, will develop
+
+![AMT repsonses](./amt_results/custemx/ZT_resp_p1p2_profile.png)
+*AMT repsonses.*
+![AMT misfits](./amt_results/custemx/ZT_misf_p1p2_profile.png)
+*AMT misfits.*
+
+![CSEM repsonses](./csem_results/custemx/EH_resp_EtEs_profile.png)
+*AMT repsonses.*
+![CSEM misfits](./csem_results/custemx/EH_misf_EtEs_profile.png)
+*AMT misfits.*
+
+![TEM repsonses](./tem_results/custemx/EdB_resp_p1p2_profile.png)
+*AMT repsonses.*
+![TEM misfits](./tem_results/custemx/EdB_misf_p1p2_profile.png)
+*AMT misfits.*
