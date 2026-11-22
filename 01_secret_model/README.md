@@ -1,27 +1,28 @@
 # Secret Model description
 
-## General infromation before running inversion
+## Read before running inversion
 
-- All synthetic data are provided as full sets (including also data below
+- All synthetic data are provided as full data sets (including also data below
   the noise level) for 451 RX stations for each method.
 
-- Topographic variations in the survey area are present, but not significant.
-  Inversion runs may neglect topography data if this substantially simplifies
-  the computational setup. Modify Rz accordingly to zero or below surface.
+- Topographic variations in the survey area are present, but smooth and
+  within maximum 100 m difference over the complete modeling domain. Inversion
+  runs may neglect topography data if this substantially simplifies the
+  computational setup. In this case, modify Rx height to zero or below surface.
 
-- The elevation of the receiver stations is alaways positiv and corresponds to
+- The elevation of the receiver stations is alaways positive and corresponds to
   the height of the stations based on the digital elevation model (DEM) -1 m in
   the model domain used for creating the synthetic data. Depending on cell
   sizes and interpolation procedures for DEM data in different codes,
   the provided z-coordinates of RX stations may not be within the subsurface
   and may be shifted downwards for all or single stations.
 
+- Noisy data should be masked individually by using the provided error data,
+  which are consistent with the errors models applied to the synthetic data.
+
 - Depenending on different inversion codes and available computational
   resources, it is absolutely possible to keep only every N-th receiver,
   do not use all components, ...
-
-- Noisy data should be masked individually by using the provided error data,
-  which are consistent with our errors models applied to the synthetic data.
 
 - The underlying resistivity distribution is not disclosed. Resistivity values
   in the subsurface model are within the common limits of real-world cases and
@@ -29,10 +30,10 @@
 
 ## Survey Geometry
 
-The secret model is based on the inversion results of a real survey and covers
-an area of 4 x 4 km, which was translated to a synthetic coordinate origin.
-Correspondingly, the measured field data of all EM data types cover a 4 x 4 km
-area and the provided topography data fit to the synthetic origin.
+- The secret model is based on inversion results of a real EM case study and
+  covers an area of 4 x 4 km, which was translated to a synthetic coordinate
+  origin. Correspondingly, the measured field data of all EM data types cover
+  a 4 x 4 km area and the provided topography data fit to the synthetic origin.
 
 - Origin of local coordinate system:
     * lat, lon = [3°, 3°]

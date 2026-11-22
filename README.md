@@ -1,26 +1,39 @@
 # 3dem-benchmarks
-**Cummunity benchmark examples designed for the 3D-EM Connect workshop**
 
-- In this repository, we provide the data required for simulating benchmark
-solutions with other software. The repository contains two folders for now:
+## Cummunity benchmark examples designed for the 3D-EM Connect workshop
 
-- Currently, only the owners of this repository are allowed to push into the
-*main* branch, for providing updates, please use the *edit* branch or create
-additional branches if required
+- This repository provides the data required for simulating benchmark
+solutions with differnt software. The repository contains two examples for now
 
-	1) A land-based model to calculate forward responses in form of EM-fields
-	or MT-data
-	2) A secret model that needs to be recovered by 3D inversing from the
-	provided data sets
+- **Forward benchmark:** A land-based model to calculate forward responses in
+  form of EM-fields or MT-data
 
-- Both models are design to work either with a CSEM, AMT, or TEM setup
+- **Secret model:** A secret model containng strucutres down to 1km depth to
+  be recovered by 3D inversing
+
+- Both examples are designed to work for AMT, CSEM, and TEM setups
 
 - Further examples / benchmarks may be added in future
 
-- New simulation results can be sent to us to be uploaded to the repository
+## Please read before starting
 
-- **Consider becoming a developer of this GitHub community repository and
-upload new simulation results individually**
+- **Consider becoming a developer of this GitHub community repository for
+  contribtuing and uploading new simulation results individually**
+
+- Report bugs or ask questions by opening issues in the repository or reaching
+  out to the workshop organizers
+
+- Simulation results can be also sent to the workshop organizers
+
+- Consider using our perferred data formats or suggest alternatives
+
+- Currently, only the owners of this repository are allowed to push into the
+  *main* branch, for providing updates, please use the *edit* branch or create
+  additional branches if required
+
+- This is just the beginning of a community-driven repository. Its future
+  direction and development will depend on the interest, feedback, and
+  engagement of the community.
 
 ## Model descriptions
 

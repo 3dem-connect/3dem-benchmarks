@@ -1,17 +1,20 @@
 # Forward Model description
 
-## General infromation before running inversion
+## Read before running forward simulations
 
-- This forward model was designed to simulat a land-based, ground-based
-transmitter (except AMT) and receiver setup to simulate either frequency-domain
-or time-domain electromagentic field data, or impedances and tipper data
-without a controlled-source
+- The setup covers typical frequncy/time ranges for exploration scales down to
+  1km depth with either controlled-source methods in frequeny- (CSEM) or
+  time- (TEM) domain and natural-source audio magnetotellurics (AMT).
 
 - The models can contain either 1 or 2 Rx patches and 1 or 2 Tx (grounded/loop)
 
-- Simulation can be computed for any single Rx patch (AMT, resulting in one or
-two result data files) or any single combination of Rx patch / Tx type
-(CSEM, TEM, up to four results data files, see
+- Responses can be computed for a receiver line and/or a receiver grid
+
+- Responses (except AMT) can be computet for a grounded or loop source
+
+- Any single combination of one of the Rx and one of the Tx is possible
+
+- Consider providing results using the suggested
 [Data format](#data-format-to-provide-simulation-results))
 
 - This model may serve as basis for further modifications, such as up- or down-
@@ -131,11 +134,11 @@ and receivers at the surface (blue dots); resistivity values are indicated.*
 *AMT misfits.*
 
 ![CSEM repsonses](./csem_results/custemx/EH_resp_EtEs_profile.png)
-*AMT repsonses.*
+*CSEM repsonses.*
 ![CSEM misfits](./csem_results/custemx/EH_misf_EtEs_profile.png)
-*AMT misfits.*
+*CSEM misfits.*
 
 ![TEM repsonses](./tem_results/custemx/EdB_resp_p1p2_profile.png)
-*AMT repsonses.*
+*TEM repsonses.*
 ![TEM misfits](./tem_results/custemx/EdB_misf_p1p2_profile.png)
-*AMT misfits.*
+*TEM misfits.*
