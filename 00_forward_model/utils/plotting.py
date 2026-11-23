@@ -37,8 +37,8 @@ def init_fig_ax(components: list[str], fd: bool = True, figsize=(12, 12),
 
 
 def plot_line(pos: np.ndarray, field: np.ndarray, cmp: list[str],
-             axis: int = 0, ax: np.ndarray | None = None, tag: str = '',
-             fi: int = 0, freq: float = 0., **kwargs: object) -> np.ndarray:
+              axis: int = 0, ax: np.ndarray | None = None, tag: str = '',
+              fi: int = 0, freq: float = 0., **kwargs: object) -> np.ndarray:
     """Plot absolute real and imaginary electromagnetic field components."""
 
     indices = {'Ex': 0, 'Ey': 1, 'Ez': 2, 'Hx': 3, 'Hy': 4, 'Hz': 5,
@@ -75,9 +75,9 @@ def plot_line(pos: np.ndarray, field: np.ndarray, cmp: list[str],
 
 
 def plot_line_td(pos: np.ndarray, field: np.ndarray, cmp: list[str],
-                axis: int = 0, ax: np.ndarray | None = None,
-                tag: str = '', ti: int = 0, time: float = 0.,
-                **kwargs: object) -> np.ndarray:
+                 axis: int = 0, ax: np.ndarray | None = None,
+                 tag: str = '', ti: int = 0, time: float = 0.,
+                 **kwargs: object) -> np.ndarray:
     """Plot transient electromagnetic field components along a profile."""
 
     indices = {'Ex': 0, 'Ey': 1, 'Ez': 2,
@@ -128,11 +128,11 @@ def plot_line_td(pos: np.ndarray, field: np.ndarray, cmp: list[str],
 
 
 def plot_line_misfit(pos: np.ndarray, field: np.ndarray, ref: np.ndarray,
-                    cmp: list[str], axis: int = 0,
-                    ax: np.ndarray | None = None, tag: str = '',
-                    fi: int = 0, freq: float = 0., lim: float = 10.,
-                    scale: str = 'linear', linthresh: float = 1.,
-                    **kwargs: object) -> np.ndarray:
+                     cmp: list[str], axis: int = 0,
+                     ax: np.ndarray | None = None, tag: str = '',
+                     fi: int = 0, freq: float = 0., lim: float = 10.,
+                     scale: str = 'linear', linthresh: float = 1.,
+                     **kwargs: object) -> np.ndarray:
     """Plot percentage real and imaginary electromagnetic field misfits."""
 
     indices = {'Ex': 0, 'Ey': 1, 'Ez': 2, 'Hx': 3, 'Hy': 4, 'Hz': 5,
@@ -167,10 +167,10 @@ def plot_line_misfit(pos: np.ndarray, field: np.ndarray, ref: np.ndarray,
 
 
 def plot_line_misfit_td(pos: np.ndarray, field: np.ndarray, ref: np.ndarray,
-                       cmp: list[str], axis: int = 0,
-                       ax: np.ndarray | None = None, tag: str = '',
-                       ti: int = 0, time: float = 0., lim: float = 10.,
-                       nlabel: int = 10, **kwargs: object) -> np.ndarray:
+                        cmp: list[str], axis: int = 0,
+                        ax: np.ndarray | None = None, tag: str = '',
+                        ti: int = 0, time: float = 0., lim: float = 10.,
+                        nlabel: int = 10, **kwargs: object) -> np.ndarray:
     """Plot percentage transient electromagnetic field misfits along a profile."""
 
     indices = {'Ex': 0, 'Ey': 1, 'Ez': 2,
@@ -287,10 +287,10 @@ def plot_slice(pos: np.ndarray, field: np.ndarray, cmp: list[str],
 
 
 def plot_slice_quiver(pos: np.ndarray, field: np.ndarray,
-                     ax: np.ndarray, fi: int = 0, vlength: float = 1.,
-                     freq: float = 0., clim: list[float] | None = None,
-                     scale: str = 'symlog', tag: str = '',
-                     **kwargs: object) -> np.ndarray:
+                      ax: np.ndarray, fi: int = 0, vlength: float = 1.,
+                      freq: float = 0., clim: list[float] | None = None,
+                      scale: str = 'symlog', tag: str = '',
+                      **kwargs: object) -> np.ndarray:
     """Plot normalized E and H field directions with magnitude background."""
 
     x, y = pos[:, 0], pos[:, 1]
