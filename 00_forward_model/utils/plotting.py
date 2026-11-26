@@ -42,7 +42,7 @@ def plot_line(pos: np.ndarray, field: np.ndarray, cmp: list[str],
     """Plot absolute real and imaginary electromagnetic field components."""
 
     indices = {'Ex': 0, 'Ey': 1, 'Ez': 2, 'Hx': 3, 'Hy': 4, 'Hz': 5,
-            'Zxx': 0, 'Zxy': 1, 'Zyx': 2, 'Zyy': 3, 'Tx': 4, 'Ty': 5}
+               'Zxx': 0, 'Zxy': 1, 'Zyx': 2, 'Zyy': 3, 'Tx': 4, 'Ty': 5}
     units = {'E': 'V/m', 'H': 'A/m', 'Z': 'Ohm', 'T': ''}
     x = pos[:, axis]
     label = f'{tag}_F (Hz): {freq}'.strip()
